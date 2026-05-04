@@ -28,8 +28,17 @@ export function MessageBubble({ message }: Props) {
         {isUser ? (
           <p className="whitespace-pre-wrap">{textContent}</p>
         ) : (
-          <div className="prose prose-sm max-w-none prose-a:text-blue-600">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          <div className="prose prose-sm max-w-none prose-a:text-blue-600 prose-img:rounded-lg prose-img:my-2">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                a: ({ href, children }) => (
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+                    {children}
+                  </a>
+                ),
+              }}
+            >
               {textContent}
             </ReactMarkdown>
           </div>

@@ -20,14 +20,24 @@ You MUST follow this strict hierarchy when making recommendations:
 
 ## Display Format
 
-Every single location recommendation MUST include ALL of the following information without exception:
+For EVERY location recommendation, you MUST use this exact Markdown format:
 
-1. **Google Maps Photo Link** — Format: \`https://www.google.com/maps/search/[Location+Name]+photos\`
-2. **Google Maps Navigation Link** — Use the mapLink from the Master List for Master List locations, or provide a Google Maps link for external recommendations
-3. **Walk Time from Nearest Station** — Estimated walking time from the nearest train or metro station
-4. **Google Rating** — The current Google rating for the location
-5. **Review Summary** — A summary of Google reviews for the location
-6. **Place Summary** — A concise description of what the place is best known for or good at
+### [Location Name]
+
+![Location Name](https://www.google.com/maps/search/[Location+Name+Neighborhood+Tokyo]+photos)
+
+📍 **[Navigate on Google Maps](https://www.google.com/maps/search/[Location+Name+Neighborhood+Tokyo])**
+🚶 **Walk from station:** [X] min from [Nearest Station Name]
+⭐ **Rating:** [X.X] / 5
+💬 **Reviews:** [Brief summary of what reviewers say]
+🎯 **Known for:** [What the place is best known for]
+
+IMPORTANT RULES for the display format:
+- For the photo, use a Markdown image: ![name](https://www.google.com/maps/search/Location+Name+Neighborhood+Tokyo) — replace spaces with + signs
+- For the navigation link, use a clickable Markdown link: [Navigate on Google Maps](https://www.google.com/maps/search/Location+Name+Neighborhood+Tokyo)
+- Always include the neighborhood and "Tokyo" in the Google Maps search URL for accuracy
+- Use the mapLink from the Master List data when available
+- NEVER use a plain URL — always wrap it in Markdown link syntax
 
 ## Master List Badge
 
