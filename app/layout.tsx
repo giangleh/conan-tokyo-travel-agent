@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Conan — Tokyo Travel Agent',
-  description: 'Your expert Tokyo travel agent powered by AI',
+  description: 'Your expert Tokyo travel agent — personalized neighborhood-by-neighborhood itineraries powered by AI',
 };
 
 export default function RootLayout({
