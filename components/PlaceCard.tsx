@@ -15,50 +15,75 @@ interface PlaceData {
 export function PlaceCard({ place }: { place: PlaceData }) {
   const searchQuery = encodeURIComponent(place.name + ' ' + place.neighborhood + ' Tokyo');
   const mapLink = place.mapLink || `https://www.google.com/maps/search/${searchQuery}`;
+  const photosLink = `https://www.google.com/images?q=${searchQuery}`;
 
-  // Category emoji for visual distinction
-  const categoryEmoji: Record<string, string> = {
-    Coffee: '☕',
-    Bakery: '🥐',
-    Camera: '📷',
-    Eyewear: '👓',
-    Sight: '🏛️',
-  };
-  const emoji = categoryEmoji[place.category] || '📍';
+  // Small embedded Google Map (free, no API key needed)
+  const embedMapUrl = `https://www.google.com/maps?q=${searchQuery}&output=embed`;
 
   return (
-    <a
-      href={mapLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex gap-3 p-3 rounded-lg border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-colors no-underline text-inherit"
-    >
-      <div className="w-14 h-14 rounded-lg flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-200">
-        <span className="text-2xl">{emoji}</span>
-      </div>
-      <div className="flex-1 min-w-0">
+    <div className="rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow bg-white">
+      {/* Map thumbnail */}
+      <a href={mapLink} target="_blank" rel="noopener noreferrer" className="block">
+        <iframe
+          src={embedMapUrl}
+          className="w-full h-32 pointer-events-none"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title={`Map of ${place.name}`}
+        />
+      </a>
+
+      {/* Card content */}
+      <div className="p-3">
         <div className="flex items-start justify-between gap-2">
-          <h4 className="font-semibold text-sm text-gray-900 truncate">{place.name}</h4>
+          <a href={mapLink} target="_blank" rel="noopener noreferrer" className="no-underline">
+            <h4 className="font-semibold text-sm text-gray-900 hover:text-blue-600 transition-colors">
+              {place.name}
+            </h4>
+          </a>
           {place.onMasterList && (
             <span className="text-xs bg-yellow-100 text-yellow-800 px-1.5 py-0.5 rounded flex-shrink-0 whitespace-nowrap">
               ⭐ Giang&apos;s List
             </span>
           )}
         </div>
-        <div className="flex items-center gap-1 mt-0.5">
+
+        <div className="flex items-center gap-1 mt-1">
           <span className="text-sm font-medium text-gray-900">{place.rating}</span>
           <span className="text-yellow-500 text-sm">★</span>
           <span className="text-xs text-gray-500">({place.reviews})</span>
           <span className="text-xs text-gray-400 mx-1">·</span>
-          <span className="text-xs text-gray-500">{place.category}</span>
+          <span className="text-xs text-gray-600">{place.category}</span>
         </div>
-        <p className="text-xs text-gray-600 mt-0.5 truncate">{place.knownFor}</p>
-        <div className="flex items-center gap-2 mt-1">
-          <span className="text-xs text-gray-400">🚶 {place.walkTime}</span>
-          <span className="text-xs text-blue-500 hover:underline">📸 Photos</span>
+
+        <p className="text-xs text-gray-600 mt-1">{place.knownFor}</p>
+
+        <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-100">
+          <span className="text-xs text-gray-500">🚶 {place.walkTime}</span>
+          <div className="flex gap-2">
+            <a
+              href={`https://www.google.com/maps/search/${searchQuery}+photos`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-500 hover:underline no-underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              📸 Photos
+            </a>
+            <a
+              href={mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-500 hover:underline no-underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              🗺️ Directions
+            </a>
+          </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 }
 
