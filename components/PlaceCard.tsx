@@ -15,17 +15,16 @@ interface PlaceData {
 export function PlaceCard({ place }: { place: PlaceData }) {
   const searchQuery = encodeURIComponent(place.name + ' ' + place.neighborhood + ' Tokyo');
   const mapLink = place.mapLink || `https://www.google.com/maps/search/${searchQuery}`;
-  const photosLink = `https://www.google.com/maps/search/${searchQuery}`;
 
-  // Color based on category
-  const categoryColors: Record<string, string> = {
-    Coffee: 'bg-amber-100 text-amber-700',
-    Bakery: 'bg-orange-100 text-orange-700',
-    Camera: 'bg-slate-100 text-slate-700',
-    Eyewear: 'bg-purple-100 text-purple-700',
-    Sight: 'bg-green-100 text-green-700',
+  // Category emoji for visual distinction
+  const categoryEmoji: Record<string, string> = {
+    Coffee: '☕',
+    Bakery: '🥐',
+    Camera: '📷',
+    Eyewear: '👓',
+    Sight: '🏛️',
   };
-  const colorClass = categoryColors[place.category] || 'bg-gray-100 text-gray-700';
+  const emoji = categoryEmoji[place.category] || '📍';
 
   return (
     <a
@@ -34,8 +33,8 @@ export function PlaceCard({ place }: { place: PlaceData }) {
       rel="noopener noreferrer"
       className="flex gap-3 p-3 rounded-lg border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-colors no-underline text-inherit"
     >
-      <div className={`w-14 h-14 rounded-lg flex-shrink-0 flex items-center justify-center ${colorClass}`}>
-        <span className="text-xl font-bold">{place.name.charAt(0)}</span>
+      <div className="w-14 h-14 rounded-lg flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-200">
+        <span className="text-2xl">{emoji}</span>
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-start justify-between gap-2">
@@ -54,7 +53,10 @@ export function PlaceCard({ place }: { place: PlaceData }) {
           <span className="text-xs text-gray-500">{place.category}</span>
         </div>
         <p className="text-xs text-gray-600 mt-0.5 truncate">{place.knownFor}</p>
-        <p className="text-xs text-gray-400 mt-0.5">🚶 {place.walkTime}</p>
+        <div className="flex items-center gap-2 mt-1">
+          <span className="text-xs text-gray-400">🚶 {place.walkTime}</span>
+          <span className="text-xs text-blue-500 hover:underline">📸 Photos</span>
+        </div>
       </div>
     </a>
   );
