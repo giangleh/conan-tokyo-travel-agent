@@ -2,20 +2,19 @@
 
 ## Introduction
 
-This document defines the requirements for a public-facing web application that hosts the Conan Tokyo travel agent chatbot on Vercel. The application provides a streaming chat interface powered by Next.js, the Vercel AI SDK, and Anthropic Claude. Users interact with Conan through a modern chat UI to receive personalized Tokyo itinerary recommendations backed by real-time Google data. The chatbot behavior, persona, recommendation logic, and master list data are defined in the existing Conan travel agent requirements (`.kiro/specs/conan-travel-agent/requirements.md`) and are referenced rather than duplicated here.
+This document defines the requirements for a public-facing web application that hosts the Conan Tokyo travel agent chatbot on Vercel. The application provides a streaming chat interface powered by Next.js, the Vercel AI SDK, and Google Gemini. Users interact with Conan through a modern chat UI to receive personalized Tokyo itinerary recommendations backed by a curated static master list dataset. The chatbot behavior, persona, recommendation logic, and master list data are defined in the existing Conan travel agent requirements (`.kiro/specs/conan-travel-agent/requirements.md`) and are referenced rather than duplicated here.
 
 ## Glossary
 
 - **Web_App**: The Next.js web application deployed on Vercel that hosts the Conan chatbot interface.
 - **Chat_UI**: The frontend chat interface component that displays the conversation between the user and Conan, including message history, input field, and streaming response indicators.
-- **Chat_API_Route**: The Next.js API route located at `/api/chat` that receives user messages, constructs the LLM prompt with system context, and streams responses from Claude back to the client.
+- **Chat_API_Route**: The Next.js API route located at `/api/chat` that receives user messages, constructs the LLM prompt with system context, and streams responses from Gemini back to the client.
 - **Vercel_AI_SDK**: The `ai` npm package providing React hooks (`useChat`) and server utilities for building streaming AI chat applications.
 - **useChat_Hook**: The Vercel AI SDK React hook that manages chat state, message history, and streaming communication between the Chat_UI and the Chat_API_Route.
-- **System_Prompt**: The instruction set sent to Claude that defines the Conan persona, recommendation rules, and behavioral constraints as specified in the existing Conan travel agent requirements.
+- **System_Prompt**: The instruction set sent to Gemini that defines the Conan persona, recommendation rules, and behavioral constraints as specified in the existing Conan travel agent requirements.
 - **Master_List_Context**: The complete dataset of 94 curated Tokyo locations across 16 neighborhoods, bundled as context for the LLM within the System_Prompt.
-- **Claude_LLM**: The Anthropic Claude language model used as the AI backend for generating Conan's responses.
-- **Streaming_Response**: A server-sent event stream that delivers Claude's response tokens incrementally to the Chat_UI as they are generated.
-- **Google_Data_Fetch**: The process of retrieving real-time location data (ratings, hours, reviews) from Google when Conan recommends specific locations.
+- **Gemini_LLM**: The Google Gemini language model used as the AI backend for generating Conan's responses.
+- **Streaming_Response**: A server-sent event stream that delivers Gemini's response tokens incrementally to the Chat_UI as they are generated.
 - **Message_Bubble**: A visual container in the Chat_UI that displays a single message from either the user or Conan.
 
 ## Requirements
@@ -46,16 +45,16 @@ This document defines the requirements for a public-facing web application that 
 
 ### Requirement 3: Chat API Route and LLM Integration
 
-**User Story:** As a developer, I want the API route to send user messages to Claude with the full Conan system prompt and master list data, so that Conan responds with accurate, persona-consistent recommendations.
+**User Story:** As a developer, I want the API route to send user messages to Gemini with the full Conan system prompt and master list data, so that Conan responds with accurate, persona-consistent recommendations.
 
 #### Acceptance Criteria
 
-1. WHEN the Chat_API_Route receives a POST request, THE Chat_API_Route SHALL forward the conversation history to the Claude_LLM with the System_Prompt prepended.
-2. THE Chat_API_Route SHALL include the complete Master_List_Context (94 locations across 16 neighborhoods) within the System_Prompt sent to the Claude_LLM.
+1. WHEN the Chat_API_Route receives a POST request, THE Chat_API_Route SHALL forward the conversation history to the Gemini_LLM with the System_Prompt prepended.
+2. THE Chat_API_Route SHALL include the complete Master_List_Context (94 locations across 16 neighborhoods) within the System_Prompt sent to the Gemini_LLM.
 3. THE Chat_API_Route SHALL include all Conan persona rules, recommendation logic, and display format requirements from the existing Conan travel agent requirements within the System_Prompt.
-4. THE Chat_API_Route SHALL stream the Claude_LLM response back to the client using the Vercel_AI_SDK streaming utilities.
-5. THE Chat_API_Route SHALL use the Anthropic Claude model via the Vercel AI SDK's Anthropic provider.
-6. IF the Claude_LLM returns an error, THEN THE Chat_API_Route SHALL return an appropriate error response to the client.
+4. THE Chat_API_Route SHALL stream the Gemini_LLM response back to the client using the Vercel_AI_SDK streaming utilities.
+5. THE Chat_API_Route SHALL use the Google Gemini model via the Vercel AI SDK's Google provider.
+6. IF the Gemini_LLM returns an error, THEN THE Chat_API_Route SHALL return an appropriate error response to the client.
 
 ### Requirement 4: Master List Data Bundling
 
@@ -64,20 +63,20 @@ This document defines the requirements for a public-facing web application that 
 #### Acceptance Criteria
 
 1. THE Web_App SHALL bundle the Master_List_Context containing all 94 Location_Entry records from the `Tokyo_Master_Full_94_Items.csv` file.
-2. THE Chat_API_Route SHALL load the Master_List_Context at request time and include it in the System_Prompt sent to the Claude_LLM.
+2. THE Chat_API_Route SHALL load the Master_List_Context at request time and include it in the System_Prompt sent to the Gemini_LLM.
 3. THE Master_List_Context SHALL include for each location: Neighborhood, Name, Category, Hours, Rating, What to Try, and Map Link.
 4. THE Web_App SHALL store the master list data as a static asset or embedded module that does not require an external database or API call to access.
 
-### Requirement 5: Real-Time Google Data Fetching
+### Requirement 5: Static Master List Data for Location Details
 
-**User Story:** As a user, I want Conan to provide current Google ratings, hours, and reviews when recommending locations, so that I receive up-to-date information for planning my visit.
+**User Story:** As a user, I want Conan to provide ratings, hours, and "What to Try" information from the curated master list when recommending locations, so that I receive reliable, vetted information for planning my visit.
 
 #### Acceptance Criteria
 
-1. WHEN the Claude_LLM generates a recommendation for a specific location, THE Web_App SHALL support fetching real-time Google data (current rating, current hours, recent reviews) for that location.
-2. THE System_Prompt SHALL instruct the Claude_LLM to include real-time Google ratings, hours, and review summaries when recommending locations.
-3. IF real-time Google data is unavailable for a location, THEN THE Web_App SHALL fall back to the static data from the Master_List_Context.
-4. THE Web_App SHALL not cache real-time Google data beyond the duration of a single chat session.
+1. WHEN the Gemini_LLM generates a recommendation for a location on the master list, THE Web_App SHALL use the static data from the Master_List_Context (rating, hours, "What to Try") for that location.
+2. THE System_Prompt SHALL instruct the Gemini_LLM to include the master list ratings, hours, and "What to Try" details when recommending locations.
+3. THE Web_App SHALL NOT make external API calls to fetch location data at runtime — all location details SHALL come from the bundled Master_List_Context.
+4. THE Master_List_Context SHALL serve as the single source of truth for all curated location details presented by Conan.
 
 ### Requirement 6: Public Access Without Authentication
 
@@ -111,7 +110,7 @@ This document defines the requirements for a public-facing web application that 
 #### Acceptance Criteria
 
 1. THE Web_App SHALL include a `next.config.js` (or `next.config.ts`) file with production-ready configuration for Vercel deployment.
-2. THE Web_App SHALL use environment variables for the Anthropic API key, referenced as `ANTHROPIC_API_KEY`.
+2. THE Web_App SHALL use environment variables for the Google Generative AI API key, referenced as `GOOGLE_GENERATIVE_AI_API_KEY`.
 3. THE Web_App SHALL not hardcode any API keys or secrets in source code.
 4. THE Web_App SHALL include a `package.json` with all required dependencies and standard Next.js build scripts (`dev`, `build`, `start`).
 5. THE Chat_API_Route SHALL function within Vercel's serverless function execution limits.
@@ -122,7 +121,7 @@ This document defines the requirements for a public-facing web application that 
 
 #### Acceptance Criteria
 
-1. IF the Chat_API_Route fails to reach the Claude_LLM, THEN THE Chat_UI SHALL display a user-friendly error message indicating the service is temporarily unavailable.
+1. IF the Chat_API_Route fails to reach the Gemini_LLM, THEN THE Chat_UI SHALL display a user-friendly error message indicating the service is temporarily unavailable.
 2. IF a network error occurs during a Streaming_Response, THEN THE Chat_UI SHALL inform the user that the response was interrupted and allow them to retry.
 3. THE Chat_UI SHALL disable the send button and input field while a Streaming_Response is in progress to prevent duplicate submissions.
 4. IF the user submits an empty message, THEN THE Chat_UI SHALL prevent the submission without sending a request to the Chat_API_Route.

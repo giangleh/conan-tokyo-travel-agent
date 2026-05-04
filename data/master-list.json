@@ -1,0 +1,848 @@
+[
+  {
+    "neighborhood": "Ginza",
+    "name": "Center the Bakery",
+    "category": "Bakery",
+    "hours": "09:00-18:00",
+    "rating": 4.5,
+    "whatToTry": "Shokupan tasting flight",
+    "mapLink": "https://maps.google.com/?q=Center+the+Bakery+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Boul'Ange",
+    "category": "Bakery",
+    "hours": "08:00-21:00",
+    "rating": 4.2,
+    "whatToTry": "Pistachio Croissants",
+    "mapLink": "https://maps.google.com/?q=Boul+Ange+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "The City Bakery",
+    "category": "Bakery",
+    "hours": "07:30-22:00",
+    "rating": 4.3,
+    "whatToTry": "Pretzel Croissants",
+    "mapLink": "https://maps.google.com/?q=City+Bakery+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Peltier Bakery",
+    "category": "Bakery",
+    "hours": "10:00-20:00",
+    "rating": 4.2,
+    "whatToTry": "French-style pastries",
+    "mapLink": "https://maps.google.com/?q=Peltier+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Turret Coffee",
+    "category": "Coffee",
+    "hours": "07:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Turret Latte",
+    "mapLink": "https://maps.google.com/?q=Turret+Coffee+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Glitch Coffee & Roasters",
+    "category": "Coffee",
+    "hours": "09:00-19:00",
+    "rating": 4.7,
+    "whatToTry": "Single origin pour-over",
+    "mapLink": "https://maps.google.com/?q=Glitch+Coffee+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Starbucks Reserve Printemps",
+    "category": "Coffee",
+    "hours": "07:30-22:30",
+    "rating": 4.4,
+    "whatToTry": "Reserve micro-blends",
+    "mapLink": "https://maps.google.com/?q=Starbucks+Reserve+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Lindberg Boutique",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.8,
+    "whatToTry": "Thintanium and n.o.w. collections",
+    "mapLink": "https://maps.google.com/?q=Lindberg+Boutique+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "999.9 (Four Nines) Spirit",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.7,
+    "whatToTry": "M-140 series; high-function hinges",
+    "mapLink": "https://maps.google.com/?q=999.9+Four+Nines+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Matsuda Store (Matsuya)",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.6,
+    "whatToTry": "Heritage engraved metal frames",
+    "mapLink": "https://maps.google.com/?q=Matsuda+Matsuya+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Lunor Shop",
+    "category": "Eyewear",
+    "hours": "11:00-19:00",
+    "rating": 4.7,
+    "whatToTry": "Classic round frames",
+    "mapLink": "https://maps.google.com/?q=Lunor+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Masunaga 1905 (Ginza)",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.8,
+    "whatToTry": "GMS series",
+    "mapLink": "https://maps.google.com/?q=Masunaga+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Oliver Peoples Ginza",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Gregory Peck frames",
+    "mapLink": "https://maps.google.com/?q=Oliver+Peoples+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Kamuro Eyewear",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Artistic colorful frames",
+    "mapLink": "https://maps.google.com/?q=Kamuro+Ginza"
+  },
+  {
+    "neighborhood": "Ginza",
+    "name": "Ginza Six Rooftop",
+    "category": "Sight",
+    "hours": "07:00-23:00",
+    "rating": 4.6,
+    "whatToTry": "Sky garden views",
+    "mapLink": "https://maps.google.com/?q=Ginza+Six+Garden"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Sawamura Bakery",
+    "category": "Bakery",
+    "hours": "07:00-22:00",
+    "rating": 4.5,
+    "whatToTry": "Rustic sourdough",
+    "mapLink": "https://maps.google.com/?q=Sawamura+Bakery+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Map Camera",
+    "category": "Camera",
+    "hours": "11:00-19:00",
+    "rating": 4.8,
+    "whatToTry": "Used Leica/Fujifilm",
+    "mapLink": "https://maps.google.com/?q=Map+Camera+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Yodobashi Camera West",
+    "category": "Camera",
+    "hours": "09:30-22:00",
+    "rating": 4.5,
+    "whatToTry": "Camera accessories/straps",
+    "mapLink": "https://maps.google.com/?q=Yodobashi+Camera+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Bic Camera Shinjuku",
+    "category": "Camera",
+    "hours": "10:00-21:00",
+    "rating": 4.4,
+    "whatToTry": "New lens testing",
+    "mapLink": "https://maps.google.com/?q=Bic+Camera+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Blue Bottle Coffee Shinjuku",
+    "category": "Coffee",
+    "hours": "08:00-21:00",
+    "rating": 4.3,
+    "whatToTry": "New Orleans Iced Coffee",
+    "mapLink": "https://maps.google.com/?q=Blue+Bottle+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Verve Coffee Roasters",
+    "category": "Coffee",
+    "hours": "07:00-22:00",
+    "rating": 4.4,
+    "whatToTry": "Nitro Flash Brew",
+    "mapLink": "https://maps.google.com/?q=Verve+Coffee+Shinjuku"
+  },
+  {
+    "neighborhood": "Shinjuku",
+    "name": "Shinjuku Gyoen",
+    "category": "Sight",
+    "hours": "09:00-16:00",
+    "rating": 4.7,
+    "whatToTry": "Greenhouse/Garden walks",
+    "mapLink": "https://maps.google.com/?q=Shinjuku+Gyoen"
+  },
+  {
+    "neighborhood": "Nakano",
+    "name": "Mame-zono",
+    "category": "Bakery",
+    "hours": "10:00-19:00",
+    "rating": 4.3,
+    "whatToTry": "Kintsuba (bean cakes)",
+    "mapLink": "https://maps.google.com/?q=Mamezono+Nakano"
+  },
+  {
+    "neighborhood": "Nakano",
+    "name": "Daily Chico",
+    "category": "Bakery",
+    "hours": "10:00-20:00",
+    "rating": 4.2,
+    "whatToTry": "8-layer soft serve",
+    "mapLink": "https://maps.google.com/?q=Daily+Chico+Nakano"
+  },
+  {
+    "neighborhood": "Nakano",
+    "name": "Fujiya Camera",
+    "category": "Camera",
+    "hours": "10:00-20:30",
+    "rating": 4.7,
+    "whatToTry": "Vintage prime lenses",
+    "mapLink": "https://maps.google.com/?q=Fujiya+Camera+Nakano"
+  },
+  {
+    "neighborhood": "Nakano",
+    "name": "Coffee High Five",
+    "category": "Coffee",
+    "hours": "11:00-19:00",
+    "rating": 4.4,
+    "whatToTry": "Dark roast espresso",
+    "mapLink": "https://maps.google.com/?q=Coffee+High+Five+Nakano"
+  },
+  {
+    "neighborhood": "Nakano",
+    "name": "Nakano Broadway",
+    "category": "Sight",
+    "hours": "11:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Vintage watch/toy hunting",
+    "mapLink": "https://maps.google.com/?q=Nakano+Broadway"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Viron Shibuya",
+    "category": "Bakery",
+    "hours": "09:00-21:00",
+    "rating": 4.6,
+    "whatToTry": "Baguette Retro",
+    "mapLink": "https://maps.google.com/?q=Viron+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Gontran Cherrier",
+    "category": "Bakery",
+    "hours": "07:30-20:00",
+    "rating": 4.4,
+    "whatToTry": "Curry bread",
+    "mapLink": "https://maps.google.com/?q=Gontran+Cherrier+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "About Life Coffee Brewers",
+    "category": "Coffee",
+    "hours": "08:00-18:00",
+    "rating": 4.4,
+    "whatToTry": "Onibus bean pour-over",
+    "mapLink": "https://maps.google.com/?q=About+Life+Coffee+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "The Roastery by Nozy Coffee",
+    "category": "Coffee",
+    "hours": "10:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Espresso Tonic",
+    "mapLink": "https://maps.google.com/?q=The+Roastery+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Hario Cafe",
+    "category": "Coffee",
+    "hours": "11:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Hario V60 drip",
+    "mapLink": "https://maps.google.com/?q=Hario+Cafe+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Streamer Coffee Company",
+    "category": "Coffee",
+    "hours": "08:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Streamer Latte (Latte Art)",
+    "mapLink": "https://maps.google.com/?q=Streamer+Coffee+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Eyevan Luxe Shibuya",
+    "category": "Eyewear",
+    "hours": "11:00-21:00",
+    "rating": 4.6,
+    "whatToTry": "Limited luxury collections",
+    "mapLink": "https://maps.google.com/?q=Eyevan+Luxe+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Jins Shibuya",
+    "category": "Eyewear",
+    "hours": "11:00-21:00",
+    "rating": 4.2,
+    "whatToTry": "Design collaborations",
+    "mapLink": "https://maps.google.com/?q=Jins+Shibuya"
+  },
+  {
+    "neighborhood": "Shibuya",
+    "name": "Beams Men Shibuya",
+    "category": "Sight",
+    "hours": "11:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Curated lifestyle gear",
+    "mapLink": "https://maps.google.com/?q=Beams+Shibuya"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "Princi",
+    "category": "Bakery",
+    "hours": "08:00-22:00",
+    "rating": 4.5,
+    "whatToTry": "Focaccia barese",
+    "mapLink": "https://maps.google.com/?q=Princi+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "Maison Ichi",
+    "category": "Bakery",
+    "hours": "08:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Pain au chocolat",
+    "mapLink": "https://maps.google.com/?q=Maison+Ichi+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "Bonsai Coffee",
+    "category": "Coffee",
+    "hours": "10:00-18:00",
+    "rating": 4.3,
+    "whatToTry": "Hand drip coffee",
+    "mapLink": "https://maps.google.com/?q=Bonsai+Coffee+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "Coffee Elementary School",
+    "category": "Coffee",
+    "hours": "11:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Educational tasting flights",
+    "mapLink": "https://maps.google.com/?q=Coffee+Elementary+School+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "Globe Specs",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.9,
+    "whatToTry": "Anne et Valentin / Vintage",
+    "mapLink": "https://maps.google.com/?q=Globe+Specs+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "T-Site / Tsutaya Books",
+    "category": "Sight",
+    "hours": "07:00-23:00",
+    "rating": 4.8,
+    "whatToTry": "Photography books/Design magazines",
+    "mapLink": "https://maps.google.com/?q=T-Site+Daikanyama"
+  },
+  {
+    "neighborhood": "Daikanyama",
+    "name": "A.P.C. Surplus Daikanyama",
+    "category": "Sight",
+    "hours": "12:00-20:00",
+    "rating": 4.3,
+    "whatToTry": "Archived French designs",
+    "mapLink": "https://maps.google.com/?q=APC+Daikanyama"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Lotus Baguette",
+    "category": "Bakery",
+    "hours": "09:00-19:00",
+    "rating": 4.3,
+    "whatToTry": "Natural yeast breads",
+    "mapLink": "https://maps.google.com/?q=Lotus+Baguette+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Boulangerie l'Atelier de Meguro",
+    "category": "Bakery",
+    "hours": "10:00-18:00",
+    "rating": 4.2,
+    "whatToTry": "Artisanal loafs",
+    "mapLink": "https://maps.google.com/?q=Boulangerie+Atelier+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Onibus Coffee",
+    "category": "Coffee",
+    "hours": "09:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Espresso by the tracks",
+    "mapLink": "https://maps.google.com/?q=Onibus+Coffee+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Starbucks Reserve Roastery",
+    "category": "Coffee",
+    "hours": "07:00-22:00",
+    "rating": 4.5,
+    "whatToTry": "Barrel-aged cold brew",
+    "mapLink": "https://maps.google.com/?q=Starbucks+Roastery+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Sidewalk Stand",
+    "category": "Coffee",
+    "hours": "09:00-21:00",
+    "rating": 4.4,
+    "whatToTry": "Hot sandwiches and latte",
+    "mapLink": "https://maps.google.com/?q=Sidewalk+Stand+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Arise Coffee Roasters",
+    "category": "Coffee",
+    "hours": "10:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Roasted beans for home",
+    "mapLink": "https://maps.google.com/?q=Arise+Coffee+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Chora Eyewear",
+    "category": "Eyewear",
+    "hours": "11:00-19:00",
+    "rating": 4.3,
+    "whatToTry": "Boutique curated brands",
+    "mapLink": "https://maps.google.com/?q=Chora+Eyewear+Nakameguro"
+  },
+  {
+    "neighborhood": "Nakameguro",
+    "name": "Traveler’s Factory",
+    "category": "Sight",
+    "hours": "12:00-20:00",
+    "rating": 4.8,
+    "whatToTry": "Custom notebooks",
+    "mapLink": "https://maps.google.com/?q=Travelers+Factory+Nakameguro"
+  },
+  {
+    "neighborhood": "Meguro",
+    "name": "Poteri Bakery",
+    "category": "Bakery",
+    "hours": "10:00-19:00",
+    "rating": 4.3,
+    "whatToTry": "Seasonal fruit pastries",
+    "mapLink": "https://maps.google.com/?q=Poteri+Bakery+Meguro"
+  },
+  {
+    "neighborhood": "Meguro",
+    "name": "Switch Coffee Tokyo",
+    "category": "Coffee",
+    "hours": "10:00-18:00",
+    "rating": 4.5,
+    "whatToTry": "Seasonal drip",
+    "mapLink": "https://maps.google.com/?q=Switch+Coffee+Meguro"
+  },
+  {
+    "neighborhood": "Meguro",
+    "name": "Gentle Monster Meguro",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Avant-garde designs",
+    "mapLink": "https://maps.google.com/?q=Gentle+Monster+Meguro"
+  },
+  {
+    "neighborhood": "Meguro",
+    "name": "Hotel Claska Gallery",
+    "category": "Sight",
+    "hours": "11:00-19:00",
+    "rating": 4.6,
+    "whatToTry": "Japanese lifestyle goods",
+    "mapLink": "https://maps.google.com/?q=Hotel+Claska+Meguro"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Boul'Ange Harajuku",
+    "category": "Bakery",
+    "hours": "08:00-20:00",
+    "rating": 4.3,
+    "whatToTry": "Croissant variations",
+    "mapLink": "https://maps.google.com/?q=Boul+Ange+Harajuku"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Reissue",
+    "category": "Coffee",
+    "hours": "10:00-19:00",
+    "rating": 4.5,
+    "whatToTry": "3D Latte Art",
+    "mapLink": "https://maps.google.com/?q=Reissue+Harajuku"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Deus Ex Machina",
+    "category": "Coffee",
+    "hours": "09:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Custom roast coffee",
+    "mapLink": "https://maps.google.com/?q=Deus+Harajuku"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Nikolai Bergmann Nomu",
+    "category": "Coffee",
+    "hours": "10:00-19:00",
+    "rating": 4.5,
+    "whatToTry": "Lunch among floral displays",
+    "mapLink": "https://maps.google.com/?q=Nikolai+Bergmann+Aoyama"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Eyevan Tokyo Heritage",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.7,
+    "whatToTry": "Craftsmanship archive models",
+    "mapLink": "https://maps.google.com/?q=Eyevan+Heritage+Harajuku"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Gratitude Eyewear",
+    "category": "Eyewear",
+    "hours": "12:00-20:00",
+    "rating": 4.6,
+    "whatToTry": "Independent designer brands",
+    "mapLink": "https://maps.google.com/?q=Gratitude+Eyewear+Harajuku"
+  },
+  {
+    "neighborhood": "Harajuku",
+    "name": "Meiji Jingu Shrine",
+    "category": "Sight",
+    "hours": "05:00-18:00",
+    "rating": 4.8,
+    "whatToTry": "Forest walk to main shrine",
+    "mapLink": "https://maps.google.com/?q=Meiji+Jingu+Shrine"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Bread, Espresso &",
+    "category": "Bakery",
+    "hours": "08:00-19:00",
+    "rating": 4.4,
+    "whatToTry": "French toast",
+    "mapLink": "https://maps.google.com/?q=Bread+Espresso+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Higuma Doughnuts x Coffee Wrights",
+    "category": "Bakery",
+    "hours": "11:00-18:00",
+    "rating": 4.5,
+    "whatToTry": "Plain doughnut and flat white",
+    "mapLink": "https://maps.google.com/?q=Higuma+Doughnuts+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Dominique Ansel Workshop",
+    "category": "Bakery",
+    "hours": "10:00-19:00",
+    "rating": 4.3,
+    "whatToTry": "DKA (Dominique's Kouign Amann)",
+    "mapLink": "https://maps.google.com/?q=Dominique+Ansel+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "The Little Bakery Tokyo",
+    "category": "Bakery",
+    "hours": "10:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "American-style cookies",
+    "mapLink": "https://maps.google.com/?q=The+Little+Bakery+Tokyo"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "SunnyHills",
+    "category": "Bakery",
+    "hours": "11:00-19:00",
+    "rating": 4.7,
+    "whatToTry": "Pineapple cake and tea (Kengo Kuma design)",
+    "mapLink": "https://maps.google.com/?q=SunnyHills+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Masunaga 1905",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.8,
+    "whatToTry": "Chord series",
+    "mapLink": "https://maps.google.com/?q=Masunaga+1905+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Eyevan 7285",
+    "category": "Eyewear",
+    "hours": "11:00-20:00",
+    "rating": 4.7,
+    "whatToTry": "Hexagonal frames",
+    "mapLink": "https://maps.google.com/?q=Eyevan+7285+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Blinc Vase",
+    "category": "Eyewear",
+    "hours": "12:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Curated selection of global eyewear",
+    "mapLink": "https://maps.google.com/?q=Blinc+Vase+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Bunkaya Zakkaten",
+    "category": "Sight",
+    "hours": "11:00-19:00",
+    "rating": 4.5,
+    "whatToTry": "Quirky Japanese souvenirs",
+    "mapLink": "https://maps.google.com/?q=Bunkaya+Zakkaten+Omotesando"
+  },
+  {
+    "neighborhood": "Omotesando",
+    "name": "Taro Okamoto Memorial Museum",
+    "category": "Sight",
+    "hours": "10:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Modern Japanese art",
+    "mapLink": "https://maps.google.com/?q=Taro+Okamoto+Museum"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Koffee Mameya",
+    "category": "Coffee",
+    "hours": "10:00-18:00",
+    "rating": 4.8,
+    "whatToTry": "Bean consultation",
+    "mapLink": "https://maps.google.com/?q=Koffee+Mameya+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Shozo Coffee Store",
+    "category": "Coffee",
+    "hours": "09:30-18:00",
+    "rating": 4.5,
+    "whatToTry": "Scones and iced coffee",
+    "mapLink": "https://maps.google.com/?q=Shozo+Coffee+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Blue Bottle Aoyama",
+    "category": "Coffee",
+    "hours": "08:00-19:00",
+    "rating": 4.4,
+    "whatToTry": "Seasonal pour-over",
+    "mapLink": "https://maps.google.com/?q=Blue+Bottle+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "White Glass Coffee",
+    "category": "Coffee",
+    "hours": "08:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Coffee with chocolate desserts",
+    "mapLink": "https://maps.google.com/?q=White+Glass+Coffee+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Center for Cosmic Wonder",
+    "category": "Sight",
+    "hours": "11:00-19:00",
+    "rating": 4.6,
+    "whatToTry": "Japanese textiles/Art books",
+    "mapLink": "https://maps.google.com/?q=Center+for+Cosmic+Wonder+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Nezu Museum",
+    "category": "Sight",
+    "hours": "10:00-17:00",
+    "rating": 4.8,
+    "whatToTry": "Traditional garden and tea house",
+    "mapLink": "https://maps.google.com/?q=Nezu+Museum"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Found MUJI Aoyama",
+    "category": "Sight",
+    "hours": "11:00-20:00",
+    "rating": 4.5,
+    "whatToTry": "Specialized lifestyle products",
+    "mapLink": "https://maps.google.com/?q=Found+MUJI+Aoyama"
+  },
+  {
+    "neighborhood": "Aoyama",
+    "name": "Spiral Market",
+    "category": "Sight",
+    "hours": "11:00-20:00",
+    "rating": 4.4,
+    "whatToTry": "Modern Japanese stationary/gifts",
+    "mapLink": "https://maps.google.com/?q=Spiral+Aoyama"
+  },
+  {
+    "neighborhood": "Asakusa",
+    "name": "Kameju",
+    "category": "Bakery",
+    "hours": "10:00-19:00",
+    "rating": 4.6,
+    "whatToTry": "Dorayaki",
+    "mapLink": "https://maps.google.com/?q=Kameju+Asakusa"
+  },
+  {
+    "neighborhood": "Asakusa",
+    "name": "Fuglen Asakusa",
+    "category": "Coffee",
+    "hours": "08:00-22:00",
+    "rating": 4.5,
+    "whatToTry": "Norwegian roast",
+    "mapLink": "https://maps.google.com/?q=Fuglen+Asakusa"
+  },
+  {
+    "neighborhood": "Asakusa",
+    "name": "Senso-ji Temple",
+    "category": "Sight",
+    "hours": "06:00-17:00",
+    "rating": 4.7,
+    "whatToTry": "Fortune drawing (Omikuji)",
+    "mapLink": "https://maps.google.com/?q=Sensoji+Temple"
+  },
+  {
+    "neighborhood": "Yanaka",
+    "name": "Kayaba Coffee",
+    "category": "Coffee",
+    "hours": "08:00-18:00",
+    "rating": 4.6,
+    "whatToTry": "Egg sandwich",
+    "mapLink": "https://maps.google.com/?q=Kayaba+Coffee"
+  },
+  {
+    "neighborhood": "Yanaka",
+    "name": "Cibi Tokyo Store",
+    "category": "Coffee",
+    "hours": "08:00-18:00",
+    "rating": 4.4,
+    "whatToTry": "Breakfast with espresso",
+    "mapLink": "https://maps.google.com/?q=Cibi+Tokyo"
+  },
+  {
+    "neighborhood": "Yanaka",
+    "name": "Yanaka Ginza",
+    "category": "Sight",
+    "hours": "10:00-18:00",
+    "rating": 4.5,
+    "whatToTry": "Traditional street snacks",
+    "mapLink": "https://maps.google.com/?q=Yanaka+Ginza"
+  },
+  {
+    "neighborhood": "Ueno",
+    "name": "Tokyo National Museum",
+    "category": "Sight",
+    "hours": "09:30-17:00",
+    "rating": 4.7,
+    "whatToTry": "Japanese archaeology/art",
+    "mapLink": "https://maps.google.com/?q=Tokyo+National+Museum"
+  },
+  {
+    "neighborhood": "Ueno",
+    "name": "Ameya Yokocho",
+    "category": "Sight",
+    "hours": "10:00-20:00",
+    "rating": 4.3,
+    "whatToTry": "Street food market",
+    "mapLink": "https://maps.google.com/?q=Ameyoko+Market"
+  },
+  {
+    "neighborhood": "Gotokuji",
+    "name": "Gotokuji Temple",
+    "category": "Sight",
+    "hours": "06:00-17:00",
+    "rating": 4.6,
+    "whatToTry": "Maneki-neko (lucky cat) statues",
+    "mapLink": "https://maps.google.com/?q=Gotokuji+Temple"
+  },
+  {
+    "neighborhood": "Setagaya",
+    "name": "Iron Coffee",
+    "category": "Coffee",
+    "hours": "08:30-18:00",
+    "rating": 4.6,
+    "whatToTry": "Latte with almond milk",
+    "mapLink": "https://maps.google.com/?q=Iron+Coffee+Setagaya"
+  },
+  {
+    "neighborhood": "Kichijoji",
+    "name": "Boulangerie Le Ressort",
+    "category": "Bakery",
+    "hours": "11:00-19:00",
+    "rating": 4.5,
+    "whatToTry": "Pistachio stick",
+    "mapLink": "https://maps.google.com/?q=Boulangerie+Le+Ressort"
+  },
+  {
+    "neighborhood": "Kichijoji",
+    "name": "Light Up Coffee",
+    "category": "Coffee",
+    "hours": "11:00-19:00",
+    "rating": 4.5,
+    "whatToTry": "Single-origin flight",
+    "mapLink": "https://maps.google.com/?q=Light+Up+Coffee+Kichijoji"
+  },
+  {
+    "neighborhood": "Kichijoji",
+    "name": "Ghibli Museum",
+    "category": "Sight",
+    "hours": "10:00-18:00",
+    "rating": 4.9,
+    "whatToTry": "Film animation secrets",
+    "mapLink": "https://maps.google.com/?q=Ghibli+Museum"
+  },
+  {
+    "neighborhood": "Kichijoji",
+    "name": "Inokashira Park",
+    "category": "Sight",
+    "hours": "24:00-24:00",
+    "rating": 4.6,
+    "whatToTry": "Boat rides on the pond",
+    "mapLink": "https://maps.google.com/?q=Inokashira+Park"
+  }
+]
